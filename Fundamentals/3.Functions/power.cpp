@@ -1,17 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void swapnum(int &a, int &b){
-    int temp=a;
-    a=b;
-    b=temp;
+int power(int a, int b){
+    int value = 1;
+    for(int i=1; i<=b; i++){
+         value = value * a;
+    }
+    return value;
 }
 
 int main(){
-    int x=10;
-    int y=20;
-    cout<<"before swap:"<<x<<","<<y<<endl;
-    swapnum(x,y);
-    cout<<"after swap:"<<x<<","<<y<<endl;  
-    return 0;
+    int x,y;
+     cout<<"Enter the base value:"<<endl;
+    cin>>x;
+     cout<<"Enter the power:"<<endl;
+     cin>>y;
+
+     cout<<"the value is:"<<power(x,y)<<endl;
+
+
+return 0;
 }
