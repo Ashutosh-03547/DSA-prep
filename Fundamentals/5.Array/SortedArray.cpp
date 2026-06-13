@@ -4,9 +4,7 @@ using namespace std;
 
 bool isSorted(vector<int>& arr) {
     
-    // Iterate over the array and check if 
-    // every element is greater than or
-    // equal to previous element.
+    
     for (int i = 1; i < arr.size(); i++)
         if (arr[i - 1] > arr[i])
             return false;
